@@ -229,7 +229,7 @@ export default function Addemployee() {
                 onChange={handleChange}
               >
                 <option value="">Select Type</option>
-                <option value="Office">Full time</option>
+                <option value="Full time">Full time</option>
                 <option value="Part time">Part time</option>
                 <option value="Contract">Contract</option>
                 <option value="Intern">Intern</option>
