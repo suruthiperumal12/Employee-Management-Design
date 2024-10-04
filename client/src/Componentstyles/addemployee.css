@@ -1,0 +1,95 @@
+.editheader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.editheader h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.arrowicon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.info {
+    font-weight: bold;
+    font-size: 16px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Style for the labels */
+.form-label {
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.btn-cancel {
+    background-color: white;
+    color: black;
+    border: 1px solid lightgrey;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-cancel:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3;
+}
+
+.form-btn {
+    position: absolute;
+    right: 0;
+}
+
+.error-text {
+    color: blue;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.container h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding: 10px;
+    right: 10px;
+    gap: 3px
+}
+
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.icon-plus {
+    color: white;
+    background-color: #007bff;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 2px;
+}
+
+.search input {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+/* Styling for the table */
+.table-container {
+    margin: 20px auto;
+    width: 95%;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+.employee-table th,
+.employee-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.employee-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.employee-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #007bff;
+    transition: color 0.2s ease;
+}
+
+.icon-btn:hover {
+    color: #0056b3;
+}
+
+td .icon-btn {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Stack items vertically on mobile */
+        padding: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+}
