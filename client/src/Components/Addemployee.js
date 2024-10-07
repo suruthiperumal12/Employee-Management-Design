@@ -17,6 +17,7 @@ export default function Addemployee() {
     status: "",
   });
   const [errors, setErrors] = useState({});
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Move to previous page
   const moveBack = () => {
@@ -74,6 +75,18 @@ export default function Addemployee() {
     });
     setErrors({}); // Reset errors on cancel
   };
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file);
+      setSelectedImage(imageUrl);
+    }
+  };
+
+  // Simulate a gallery click by triggering the file input
+  const handleClick = () => {
+    document.getElementById("imageInput").click();
+  };
 
   return (
     <div>
@@ -86,6 +99,22 @@ export default function Addemployee() {
         Personal Information
       </p>
       <form className="m-5" onSubmit={handleConfirm}>
+        <div className="row">
+          <div className="imgcontainer" onClick={handleClick}>
+            {selectedImage ? (
+              <img src={selectedImage} alt="Selected" className="image" />
+            ) : (
+              <p className="text">Click to select an image</p>
+            )}
+            <input
+              type="file"
+              id="imageInput"
+              style={{ display: "none" }}
+              accept="image/*"
+              onChange={handleImageChange}
+            />
+          </div>
+        </div>
         <div className="row">
           {/* Left Column */}
           <div className="col-md-6">

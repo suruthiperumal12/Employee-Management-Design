@@ -90,6 +90,6 @@ app.delete("/delete/:empID", (req, res) => {
   });
 });
 
-app.listen(8081, () => {
-  console.log("Server is running on http://localhost:8081");
+app.listen(8082, () => {
+  console.log("Server is running on http://localhost:8082");
 });
